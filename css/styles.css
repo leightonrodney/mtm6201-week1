@@ -1,0 +1,90 @@
+body{
+    background: #DFCFBE;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 80px 0 0 0;
+    padding: 0;
+}
+
+.container{
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #00703C;
+    margin: 30px auto;
+    max-width: 460px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ac-logo{
+    bottom: 22px;
+    position: absolute;
+    right: 22px;
+    width: 150px;
+}
+
+.container::after {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+.container:hover {
+    transform: scale(1.10, 1.10);
+}
+  
+.container:hover::after {
+    opacity: 1;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+header h1{
+    font-weight:600;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+img{
+    border-radius: 8px;
+}
+
+dl{
+    display: flex;
+    flex-direction: column;
+}
+
+dl, dt, dd{
+    margin: 0;
+    padding: 0;
+}
+
+dt{
+    font-weight: 600;
+}
+
+dd{
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+footer{
+    padding-top:20px;
+}
